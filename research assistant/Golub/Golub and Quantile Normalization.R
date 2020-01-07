@@ -4,8 +4,6 @@
 ## Golub et al., data analysis
 #################################
 
-
-
 ## Set environment
 setRepositories()
 
@@ -20,7 +18,6 @@ setwd("C:\\Users\\hyunk\\Desktop\\research assistant")
 
 data(golub)
 ?golub
-
 
 dim(golub)
 golub <- t(golub)
@@ -73,7 +70,6 @@ quantileNormABC <- function(input){
   return(finalOutput)
 }
 
-
 ## Generating test dataset
 A <- c(1,5,3,5)
 B <- c(2,1,6,7)
@@ -85,16 +81,3 @@ testData <- t(data.frame(A,B,C,D))
 rowSums(testData)
 normalize.quantiles(testData)
 quantileNormABC(testData)
-
-
-
-
-
-
-
-
-
-
-
-
-
